@@ -8,11 +8,17 @@ const Formulaire = () => {
   const [time, setTime] = useState("");
   const [tattooType, setTattooType] = useState("fleurs");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+  };
+
   return (
+    <main>
     <div>
-     
-      <form className="rdv" > 
+      <form className="rdv" onSubmit={handleSubmit}>
         <h2>Formulaire de prise de rendez-vous</h2>
+
         <div>
           <label htmlFor="firstname">Nom complet :</label>
           <input
@@ -21,6 +27,7 @@ const Formulaire = () => {
             name="firstname"
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
+            required
           />
         </div>
 
@@ -32,6 +39,7 @@ const Formulaire = () => {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
 
@@ -43,6 +51,7 @@ const Formulaire = () => {
             name="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
+            required
           />
         </div>
 
@@ -54,6 +63,7 @@ const Formulaire = () => {
             name="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
+            required
           />
         </div>
 
@@ -67,6 +77,7 @@ const Formulaire = () => {
             max="19:00"
             value={time}
             onChange={(e) => setTime(e.target.value)}
+            required
           />
         </div>
 
@@ -77,14 +88,18 @@ const Formulaire = () => {
             name="tattooType"
             value={tattooType}
             onChange={(e) => setTattooType(e.target.value)}
+            required
           >
             <option value="fleurs">Fleurs</option>
             <option value="portrait">Portrait</option>
             <option value="animaux">Animaux</option>
           </select>
         </div>
+
+        <button type="submit">Envoyer</button>
       </form>
     </div>
+    </main>
   );
 };
 

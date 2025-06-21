@@ -1,9 +1,8 @@
-import React from 'react';
 
 const Home = () => {
   return (
     <div>
-      <h1>Acceuil</h1>
+      <h1>Acceuil En cours de développement</h1>
     </div>
   );
 };
