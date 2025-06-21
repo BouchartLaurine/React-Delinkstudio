@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "../styles/index.scss";
+
 import Navbar from "./components/Navbar";
 import Contact from "./page/Contact";
 import Formulaire from "./page/Formulaire";
