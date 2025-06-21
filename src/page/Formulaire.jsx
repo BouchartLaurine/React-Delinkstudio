@@ -10,12 +10,16 @@ const Formulaire = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
 
   };
 
+
+  
+
   return (
     <main>
-    <div>
+    <div className="form-rdv">
       <form className="rdv" onSubmit={handleSubmit}>
         <h2>Formulaire de prise de rendez-vous</h2>
 
