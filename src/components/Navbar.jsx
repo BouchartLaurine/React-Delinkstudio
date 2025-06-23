@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className='bg-header' >
-        <img src=" " alt="" />
         <h1>Del'Ink Studio</h1>
         <h2>Vos histoires, gravées à l'encre noire</h2>
       </div>
