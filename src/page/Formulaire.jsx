@@ -8,11 +8,12 @@ const Formulaire = () => {
   const [time, setTime] = useState("");
   const [tattooType, setTattooType] = useState("fleurs");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
 
-  };
+  
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("Le formulaire a été soumis !");
+};
 
 
   

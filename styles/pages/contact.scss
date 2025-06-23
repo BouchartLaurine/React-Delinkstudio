@@ -16,6 +16,7 @@
 .info-content {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   p {
     color: #DFD0B8;
     font-size: 36px;
@@ -28,6 +29,9 @@
 .container {
   background-color: #222831;
   width: 1374px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .main-contact {
   background-color: #948979;
