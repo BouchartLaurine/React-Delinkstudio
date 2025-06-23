@@ -29,6 +29,7 @@ const Formulaire = () => {
             type="text"
             id="firstname"
             name="firstname"
+            placeholder="Entrez votre nom complet"
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
             required
@@ -41,6 +42,7 @@ const Formulaire = () => {
             type="email"
             id="email"
             name="email"
+            placeholder="Entrez votre adresse email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -53,6 +55,7 @@ const Formulaire = () => {
             type="tel"
             id="phone"
             name="phone"
+            placeholder="Entrez votre numéro de téléphone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
@@ -60,30 +63,38 @@ const Formulaire = () => {
         </div>
 
         <div className="form-input">
-          <label htmlFor="date">Date souhaitée :</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            required
-          />
-        </div>
+  <label htmlFor="date">Date souhaitée :</label>
+  <div className="tooltip-container">
+    <input
+      type="date"
+      id="date"
+      name="date"
+      value={date}
+      onChange={(e) => setDate(e.target.value)}
+      required
+    />
+    <span className="tooltip-text">Du mardi au samedi</span>
+  </div>
+</div>
 
-        <div className="form-input">
-          <label htmlFor="time">Heure souhaitée :</label>
-          <input
-            type="time"
-            id="time"
-            name="time"
-            min="10:00"
-            max="19:00"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            required
-          />
-        </div>
+
+   <div className="form-input">
+  <label htmlFor="time">Heure souhaitée :</label>
+  <div className="tooltip-container">
+    <input
+      type="time"
+      id="time"
+      name="time"
+      min="10:00"
+      max="19:00"
+      value={time}
+      onChange={(e) => setTime(e.target.value)}
+      required
+    />
+    <span className="tooltip-text">Entre 10h et 19h</span>
+  </div>
+</div>
+
 
         <div className="form-input">
           <label htmlFor="tattooType">Type de tatouage :</label>

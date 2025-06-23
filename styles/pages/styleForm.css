@@ -1,9 +1,10 @@
 form {
   width: 626px;
+  height: 600px;
   margin: 50px auto;
   padding: 20px;
   background-color: #948979;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,5 +68,37 @@ main {
 input,
 select {
   background-color: #DCCCB4;
+  margin-bottom: 10px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222831;
+  color: #DFD0B8;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=styleForm.css.map */
