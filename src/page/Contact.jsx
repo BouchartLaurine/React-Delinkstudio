@@ -1,32 +1,91 @@
-
-
+import { useState } from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Formulaire soumis :", form);
+    // Tu peux envoyer les données vers une API ici
+  };
+
   return (
-   <main className="main-contact"> 
-     <div className="container">
-       <h1 className="txt">Vous souhaitez discuter d’une idée de tatouage ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos réseaux.</h1>
-       <p className="info">Information importantes :</p>
-       <div className="info-content">
-         <img src="/email.png" alt="logo email" />
-         <p>contact@delinkstudio.fr</p>
-       </div>
-       <div className="info-content">
-         <img src="/mobile.png" alt="logo telephone" />
-         <p>06 12 34 56 78</p>
-       </div>
-       <div className="info-content">
-         <img src="/broche-de-localisation.png" alt="logo localisation" />
-         <p>42 rue des Fusillés, 62300 Lens</p>
-       </div>
-       <div className="info-content">
-         <img src="/horloge-murale.png" alt="logo horloge" />
-         <p>Ouvert du mardi au samedi – sur rendez-vous</p>
+    <main className="main-contact">
+      <div className="container">
+        <div className="contact-header">
+          <h1 className="txt">
+            Vous souhaitez discuter d’une idée de tatouage ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos réseaux.
+          </h1>
+          <p className="info">Informations importantes :</p>
+
+          <div className="info-content">
+            <img src="/email.png" alt="logo email" />
+            <p>contact@delinkstudio.fr</p>
+          </div>
+          <div className="info-content">
+            <img src="/mobile.png" alt="logo téléphone" />
+            <p>06 12 34 56 78</p>
+          </div>
+          <div className="info-content">
+            <img src="/broche-de-localisation.png" alt="logo localisation" />
+            <p>42 rue des Fusillés, 62300 Lens</p>
+          </div>
+          <div className="info-content">
+            <img src="/horloge-murale.png" alt="logo horloge" />
+            <p>Ouvert du mardi au samedi – sur rendez-vous</p>
+          </div>
+        </div>
+
+        {/* Formulaire --------------------- */}
+        <div className="form-container">
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <h2>Formulaire de contact</h2>
+
+            <label htmlFor="name">Nom complet :</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Votre nom"
+              required
+            />
+
+            <label htmlFor="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Votre adresse email"
+              required
+            />
+
+            <label htmlFor="message">Description du projet :</label>
+            <textarea
+              id="message"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Décrivez votre projet, vos envies..."
+              required
+            />
+
+            <button type="submit" className="form-button">Envoyer</button>
+          </form>
+        </div>
       </div>
- 
-     
-     </div> 
-     
     </main>
   );
 };
