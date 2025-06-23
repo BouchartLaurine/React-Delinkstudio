@@ -27,19 +27,19 @@ const Contact = () => {
           </h1>
           <p className="info">Informations importantes :</p>
 
-          <div className="info-content">
+          <div className="info-content-c">
             <img src="/email.png" alt="logo email" />
             <p>contact@delinkstudio.fr</p>
           </div>
-          <div className="info-content">
+          <div className="info-content-c">
             <img src="/mobile.png" alt="logo téléphone" />
             <p>06 12 34 56 78</p>
           </div>
-          <div className="info-content">
+          <div className="info-content-c">
             <img src="/broche-de-localisation.png" alt="logo localisation" />
             <p>42 rue des Fusillés, 62300 Lens</p>
           </div>
-          <div className="info-content">
+          <div className="info-content-c">
             <img src="/horloge-murale.png" alt="logo horloge" />
             <p>Ouvert du mardi au samedi – sur rendez-vous</p>
           </div>

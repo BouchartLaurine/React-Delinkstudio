@@ -25,7 +25,6 @@
   max-width: 762px;
   text-align: start;
   font-size: 28px;
-  margin-bottom: 40px;
 }
 
 .info {
@@ -35,14 +34,18 @@
   margin-bottom: 20px;
 }
 
-.info-content {
+.info-content-c {
   display: flex;
   align-items: center;
-  gap: 20px;
+
   margin-bottom: 20px;
+  img{
+    width: 32px;
+    height: 32px;
+  }
 }
 
-.info-content p {
+.info-content-c p {
   color: #DFD0B8;
   font-size: 20px;
 }

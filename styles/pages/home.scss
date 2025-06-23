@@ -5,11 +5,7 @@
   width: 587px;
   height: 782px;
   }
-  h4 {
-    margin-top: 25px;
-    font-size: 36px;
-    margin-left: 65px;
-  }
+
  img {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -44,9 +40,23 @@ margin-right: 50px;
     img {
       width: 64px;
       height: 64px;
+
     }
   }
 
+    .title {
+    margin-top: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+.social-list {
+  display: flex;
+  gap: 0px; 
+  list-style: none; 
+  padding: 0;
+  margin-right: 150px;
+ }
 
 
   // Section Salon ----------------
