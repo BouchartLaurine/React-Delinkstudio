@@ -46,41 +46,47 @@ const Contact = () => {
         </div>
 
         {/* Formulaire --------------------- */}
-        <div className="form-container">
+        <div className="form-container">   
           <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Formulaire de contact</h2>
+            <h2>Prenons contact</h2>
 
-            <label htmlFor="name">Nom complet :</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Votre nom"
-              required
-            />
+            <div className="form-row">
+              <label htmlFor="name">Nom complet :</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Votre nom"
+                required
+              />
+            </div>
 
-            <label htmlFor="email">Email :</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Votre adresse email"
-              required
-            />
+            <div className="form-row">
+              <label htmlFor="email">Email :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="Votre adresse email"
+                required
+              />
+            </div>
 
-            <label htmlFor="message">Description du projet :</label>
-            <textarea
-              id="message"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Décrivez votre projet, vos envies..."
-              required
-            />
+            <div className="form-row">
+              <label htmlFor="message">Description du projet :</label>
+              <textarea
+                id="message"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Décrivez votre projet, vos envies..."
+                required
+              />
+            </div>
 
             <button type="submit" className="form-button">Envoyer</button>
           </form>
