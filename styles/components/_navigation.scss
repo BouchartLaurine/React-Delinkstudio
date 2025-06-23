@@ -52,3 +52,34 @@ h3 {
   color: #948979;
   text-align: center;
 }
+
+/* -------- Responsive pour iPhone 12 Pro -------- */
+@media (max-width: 420px) {
+
+
+  .bg-header h1 {
+    font-size: 22px;
+  }
+
+  .bg-header h2 {
+    font-size: 14px;
+  }
+
+  .bg-header img {
+    max-width: 70px;
+    margin-bottom: 8px;
+  }
+
+  /* Menu vertical au lieu d'horizontal */
+  .navbar-links {
+    margin-bottom: 4px;
+  }
+
+  .navbar-links li a {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}

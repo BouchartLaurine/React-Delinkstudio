@@ -101,4 +101,45 @@ select {
   opacity: 1;
   visibility: visible;
 }
+
+/* Responsive iPhone 12 Pro (largeur ~390px) */
+@media (max-width: 420px) {
+  form {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  .form-rdv {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 15px 10px;
+  }
+  .form-input {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  form label {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  form input,
+form select,
+form textarea,
+.tooltip-container {
+    width: 100%;
+    font-size: 16px;
+  }
+  .tooltip-text {
+    font-size: 12px;
+  }
+  .form-h2 {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+}
 /*# sourceMappingURL=styleForm.css.map */
