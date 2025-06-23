@@ -20,10 +20,10 @@ const Formulaire = () => {
   return (
     <main>
     <div className="form-rdv">
+      <h2 className="form-h2" >Formulaire de prise de rendez-vous</h2>
       <form className="rdv" onSubmit={handleSubmit}>
-        <h2>Formulaire de prise de rendez-vous</h2>
-
-        <div>
+       
+        <div className="form-input">
           <label htmlFor="firstname">Nom complet :</label>
           <input
             type="text"
@@ -35,7 +35,7 @@ const Formulaire = () => {
           />
         </div>
 
-        <div>
+        <div className="form-input">
           <label htmlFor="email">Email :</label>
           <input
             type="email"
@@ -47,7 +47,7 @@ const Formulaire = () => {
           />
         </div>
 
-        <div>
+        <div className="form-input">
           <label htmlFor="phone">Téléphone :</label>
           <input
             type="tel"
@@ -59,7 +59,7 @@ const Formulaire = () => {
           />
         </div>
 
-        <div>
+        <div className="form-input">
           <label htmlFor="date">Date souhaitée :</label>
           <input
             type="date"
@@ -71,7 +71,7 @@ const Formulaire = () => {
           />
         </div>
 
-        <div>
+        <div className="form-input">
           <label htmlFor="time">Heure souhaitée :</label>
           <input
             type="time"
@@ -85,7 +85,7 @@ const Formulaire = () => {
           />
         </div>
 
-        <div>
+        <div className="form-input">
           <label htmlFor="tattooType">Type de tatouage :</label>
           <select
             id="tattooType"
