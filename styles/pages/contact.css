@@ -1,0 +1,31 @@
+.txt {
+  color: #DFD0B8;
+  width: 762px;
+  text-align: start;
+  margin-left: 510px;
+}
+
+.info {
+  margin-top: 200px;
+  color: #948979;
+  font-size: 36px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: row;
+}
+.info-content p {
+  color: #DFD0B8;
+  font-size: 36px;
+}
+
+.container {
+  background-color: #222831;
+  width: 1374px;
+}
+
+.main-contact {
+  background-color: #948979;
+}
+/*# sourceMappingURL=contact.css.map */

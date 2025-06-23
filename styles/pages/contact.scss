@@ -1,0 +1,35 @@
+.txt {
+  color: #DFD0B8;
+  // font-size: 36px;
+  width: 762px;
+  text-align: start;
+  margin-left: 510px;
+}
+
+.info{
+  margin-top: 200px;
+ color: #948979;
+ font-size: 36px;
+}
+
+// Infos ---------------------
+.info-content {
+  display: flex;
+  flex-direction: row;
+  p {
+    color: #DFD0B8;
+    font-size: 36px;
+  }
+}
+
+
+
+// Main container styles ↓ ----------------------
+.container {
+  background-color: #222831;
+  width: 1374px;
+}
+.main-contact {
+  background-color: #948979;
+}
+

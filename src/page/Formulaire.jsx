@@ -110,8 +110,7 @@ const Formulaire = () => {
             <option value="animaux">Animaux</option>
           </select>
         </div>
-
-        <button type="submit">Envoyer</button>
+        <button type="submit" className="form-button">Envoyer</button>
       </form>
     </div>
     </main>
