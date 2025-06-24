@@ -441,6 +441,84 @@ form textarea,
   margin-left: 5px;
 }
 
+.color-line {
+  display: none;
+}
+
+@media (max-width: 428px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 30px;
+    border-radius: 15px;
+  }
+  .contact-header {
+    align-items: start;
+  }
+  .txt {
+    max-width: 100%;
+    font-size: 20px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: large;
+  }
+  .color-line {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #948979;
+  }
+  .info {
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .info-content-c {
+    justify-content: center;
+    gap: 10px;
+  }
+  .info-content-c img {
+    width: 24px;
+    height: 24px;
+  }
+  .info-content-c p {
+    font-size: 16px;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .contact-form {
+    gap: 15px;
+  }
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-row label {
+    width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #DFD0B8;
+  }
+  .form-row input,
+.form-row textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  .form-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #DFD0B8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
 .tatoueur,
 .salon {
   background-color: #DFD0B8;
@@ -491,5 +569,164 @@ p {
   list-style: none;
   padding: 0;
   margin-right: 150px;
+}
+
+@media (max-width: 428px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .tatoueur,
+.salon {
+    width: 100%;
+    max-width: 400px; /* un peu plus petit que l'écran pour laisser un peu de marge */
+    height: auto; /* laisse la hauteur s'adapter au contenu */
+    border-radius: 15px; /* un peu moins arrondi pour mobile */
+    margin-bottom: 2rem; /* espace entre les sections */
+  }
+  img {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px; /* réduit un peu la taille du texte pour mobile */
+    padding: 0 1rem;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .title {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  .social-list {
+    margin-right: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+h1 {
+  color: #DFD0B8;
+}
+
+.image-wrapper {
+  background-color: #DFD0B8;
+  border-radius: 10px;
+  width: 408px;
+  height: 229px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.galerie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.galerie-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.galerie {
+  margin-top: 2rem;
+  width: 897px;
+  height: 541px;
+}
+
+/* Galley img left  ↓  */
+.galerie2 {
+  margin-left: 400px;
+  width: 408px;
+  height: 711px;
+  background-color: #DFD0B8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.galerie2 img {
+  width: 408px;
+  height: 408px;
+  border-radius: 10px;
+  margin-top: 40%;
+  margin-left: 0px;
+}
+
+/* Responsive iPhone 12 Pro */
+@media (max-width: 428px) {
+  .galerie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .galerie {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 1rem;
+  }
+  .galerie-list {
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  .image-wrapper {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+  }
+  .galerie2 {
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 2rem;
+    background-color: #DFD0B8;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .galerie2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

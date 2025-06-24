@@ -22,7 +22,7 @@ const Galerie = () => {
        </div>
 
         <div className="galerie2">
-        <img src="./tatoo-.jpg" alt="" />
+        <img src="./tatoo-.jpg" alt="tatouage portrait" />
         </div>
       </div>
 
