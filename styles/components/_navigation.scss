@@ -1,7 +1,7 @@
 .nabvar h1 {
   color: #D0B8A0;
   font-size: 40px;
-  margin-top: 13px;
+  margin-top: 1px;
 h2 {
   color: #DFD0B8;
   font-size: 36px;
@@ -13,7 +13,7 @@ h2 {
 
 .bg-header {
   background-color: #222831;
-  height: 112px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +28,8 @@ h2 {
   height: 130px;
   margin-bottom: 10px;
   position: absolute;
-  left: 40px;
-  top:-10px;
+  left: 4px;
+  top:-20px;
 }
 
 
@@ -41,7 +41,7 @@ h2 {
      justify-content: space-around;
      list-style: none;
      background-color: #393E46;
-     padding: 5px;
+     padding: 1px;
    }
 
 
@@ -58,6 +58,8 @@ h2 {
 nav li a {
   font-size: 36px;
   color: #DFD0B8;
+  margin-left: 200px;
+
   text-decoration: none;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   
@@ -79,10 +81,12 @@ nav li a.active {
 
   .bg-header h1 {
     font-size: 22px;
+    margin-left: 20px;
   }
 
   .bg-header h2 {
     font-size: 14px;
+    margin-left: 20px;
   }
 
   .bg-header img {
@@ -96,7 +100,8 @@ nav li a.active {
   }
 
   .navbar-links li a {
-    font-size: 16px;
+    font-size: 16px; 
+   
   }
   h3 {
     font-size: 20px;

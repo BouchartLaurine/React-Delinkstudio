@@ -25,7 +25,7 @@ const Contact = () => {
           <h1 className="txt">
             Vous souhaitez discuter d’une idée de tatouage ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos réseaux.
           </h1>
-         <div class="color-line"></div>
+         <div className="color-line"></div>
           <p className="info">Informations importantes :</p>
 
           <div className="info-content-c">
@@ -45,7 +45,7 @@ const Contact = () => {
             <p>Ouvert du mardi au samedi – sur rendez-vous</p>
           </div>
         </div>
-        <div class="color-line" />
+        <div className="color-line" />
 
         {/* Formulaire --------------------- */}
         <div className="form-container">   
