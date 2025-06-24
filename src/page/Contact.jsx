@@ -25,8 +25,7 @@ const Contact = () => {
           <h1 className="txt">
             Vous souhaitez discuter d’une idée de tatouage ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos réseaux.
           </h1>
-        <div class="color-line"></div>
-
+         <div class="color-line"></div>
           <p className="info">Informations importantes :</p>
 
           <div className="info-content-c">
@@ -50,9 +49,9 @@ const Contact = () => {
 
         {/* Formulaire --------------------- */}
         <div className="form-container">   
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Prenons contact</h2>
+                <h2>Prenons contact</h2>
 
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <label htmlFor="name">Nom complet :</label>
               <input
@@ -90,8 +89,8 @@ const Contact = () => {
                 required
               />
             </div>
-
-            <button type="submit" className="form-button">Envoyer</button>
+            <div className="button-container">
+            <button type="submit" className="form-button">Envoyer</button>  </div>
           </form>
         </div>
       </div>
