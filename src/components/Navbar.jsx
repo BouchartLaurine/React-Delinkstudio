@@ -6,6 +6,7 @@ const Navbar = () => {
       <div className='bg-header'>
         <h1>Del'Ink Studio</h1>
         <h2>Vos histoires, gravées à l'encre noire</h2>
+       <a href="/"><img src="./logo-studio.png" alt="logo du studio"  className='logo'/> </a> 
       </div>
       <ul className="navbar-links">
         <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Accueil</NavLink></li>
