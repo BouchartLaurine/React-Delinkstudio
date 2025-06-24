@@ -22,36 +22,45 @@ h2 {
 
 }
 
-
-/* .logo-studio img{
-  display: flex;
-  position: relative;
-  z-index: 10; 
-} */
   /* <-- ------Header ↑--------------- --> */
+// Nav  ↓ -----------------------
+   nav ul {
+     margin-top: 1%;
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     background-color: #393E46;
+     padding: 5px;
+   }
 
-  nav ul {
-    margin-top: 1%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #393E46;
-    padding: 5px;
-  }
 
-  nav li a{
-    font-size: 36px;
-    color: #DFD0B8;
-     text-decoration: none;
-  }
 
-h3 {
-  margin-top: 10px;
-  font-size: 32px;
-  background-color: #222831;
-  color: #948979;
+ h3 {
+   margin-top: 10px;
+   font-size: 32px;
+   background-color: #222831;
+   color: #948979;
   text-align: center;
+ }
+
+
+nav li a {
+  font-size: 36px;
+  color: #DFD0B8;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  
 }
+
+nav li a:hover {
+  color: #A3B18A;
+  border-bottom: 2px solid #E0A899;
+}
+
+nav li a.active {
+  color: #E0A899;
+}
+
 
 /* -------- Responsive pour iPhone 12 Pro -------- */
 @media (max-width: 420px) {
