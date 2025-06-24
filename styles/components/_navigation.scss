@@ -74,11 +74,54 @@ nav li a.active {
   color: #E0A899;
 }
 
+/* === Burger button (hidden by default) === */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 20;
+}
 
-/* -------- Responsive pour iPhone 12 Pro -------- */
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #DFD0B8;
+  border-radius: 2px;
+}
+
+/* === Responsive menu === */
 @media (max-width: 420px) {
+  .burger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    // background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
 
 
+
+  .navbar-links li a {
+    font-size: 18px;
+    
+  }
+  
   .bg-header h1 {
     font-size: 22px;
     margin-left: 20px;
@@ -93,16 +136,6 @@ nav li a.active {
     max-width: 70px;
     margin-bottom: 8px;
   }
-
-  /* Menu vertical au lieu d'horizontal */
-  .navbar-links {
-    margin-bottom: 4px;
-  }
-
-  .navbar-links li a {
-    font-size: 16px; 
-   
-  }
   h3 {
     font-size: 20px;
     margin-top: 5px;
@@ -114,3 +147,4 @@ nav li a.active {
     top: -5px;
   }
 }
+

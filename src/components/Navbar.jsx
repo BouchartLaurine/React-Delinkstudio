@@ -1,14 +1,29 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <div className='bg-header'>
+      <div className="bg-header">
         <h1>Del'Ink Studio</h1>
         <h2>Vos histoires, gravées à l'encre noire</h2>
-       <a href="/"><img src="./logo-studio.png" alt="logo du studio"  className='logo'/> </a> 
+        <a href="/"><img src="./logo-studio.png" alt="logo du studio" className="logo" /></a>
+
+        {/* Burger button */}
+        <button
+          className="burger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+        </button>
       </div>
-      <ul className="navbar-links">
+
+      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Accueil</NavLink></li>
         <li><NavLink to="/galerie" className={({ isActive }) => isActive ? 'active' : ''}>Galerie</NavLink></li>
         <li><NavLink to="/form" className={({ isActive }) => isActive ? 'active' : ''}>Prise de rendez-vous</NavLink></li>
