@@ -1,4 +1,3 @@
-
 # 🎨 Del'Ink Studio — Site fictif de tatoueur
 
 Ce projet est un site vitrine fictif pour un salon de tatouage, réalisé avec **React** et **SCSS**.  
@@ -8,7 +7,7 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 
 ## 🚀 Technologies utilisées
 
-- ⚛️ React (Vite ou CRA)
+- ⚛️ React ( Vite )
 - 🎨 SCSS
 - 📦 React Router DOM
 
@@ -31,6 +30,10 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 ### 📬 Contact
 - Formulaire de contact simple avec nom, email et message.
 
+### ❓ FAQ (Foire Aux Questions)
+- Questions fréquentes sur les tatouages, la douleur, les soins, les mineurs, etc.
+- Affichage dynamique des réponses avec effet d’ouverture/fermeture (accordion).
+
 ---
 
 ## 📱 Responsive
@@ -39,7 +42,7 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 
 ---
 
-## ✨ Fonctionnalités front-end notables
+## ✨ Fonctionnalités front-end
 
 - Composants React fonctionnels
 - Navigation avec React Router
@@ -51,9 +54,8 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 
 ## 📷 Aperçu (screenshots)
 
-![Aperçu du site](./public/Capture-responsive.png)
+![Aperçu du site](./public/Capture-responsive.png)  
 ![Aperçu du site](./public/Capture-responsive02.png)
-
 
 ---
 
@@ -63,11 +65,12 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 git clone https://github.com/ton-pseudo/ton-repo.git
 cd ton-repo
 npm install
-npm run dev
+npm run dev 
 
 
 
 
+ ```
 
 
 
@@ -83,6 +86,4 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
 
