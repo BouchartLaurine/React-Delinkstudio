@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -43,6 +43,7 @@ const Navbar = () => {
         <li><NavLink to="/galerie" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Galerie</NavLink></li>
         <li><NavLink to="/form" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Prise de rendez-vous</NavLink></li>
         <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Contact</NavLink></li>
+        <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Faq</NavLink></li>
       </ul>
     </nav>
   );
