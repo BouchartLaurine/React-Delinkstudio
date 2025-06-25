@@ -62,8 +62,8 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 ## 🔧 Lancer le projet en local
 
 ```bash
-git clone https://github.com/ton-pseudo/ton-repo.git
-cd ton-repo
+git clone https://github.com/BouchartLaurine/React-Delinkstudio
+cd React-Delinkstudio
 npm install
 npm run dev 
 
