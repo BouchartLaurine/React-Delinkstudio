@@ -96,7 +96,7 @@ nav li a.active {
   border-radius: 2px;
 }
 
-/* ===================== Responsive menu ========== */
+/* ===================== Responsive Iphone12Pro ========== */
 @media (max-width: 420px) {
   .burger {
     display: flex;
@@ -157,3 +157,66 @@ nav li a.active {
     top: -5px;
   }
 }
+
+/* ===================== Responsive  iPadMini========== */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+ .navbar-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #393E46;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  
+  &.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+
+  .bg-header h1 {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+
+  .bg-header h2 {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .bg-header img {
+    max-width: 70px;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .logo {
+    height: 80px;
+    position: absolute;
+    left: 2px;
+    top: -5px;
+  }
+}
+

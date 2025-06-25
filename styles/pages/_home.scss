@@ -2,15 +2,15 @@
 .salon {
   background-color: #DFD0B8;
   border-radius: 15%;
-  width: 587px;
+  width: 580px;
   height: 540px;
   }
 
  img {
   margin-top: 50px;
   margin-bottom: 10px;
-  margin-left: 70px;
-  width: 409px;
+  margin-left: 80px;
+  width: 400px;
   height: 200px;
 }
 
@@ -59,7 +59,7 @@ margin-right: 50px;
  }
 
 
- // Responsive iPhone 12 Pro
+ /* =================Responsive iPhone 12 Pro================= */
 @media (max-width: 428px) {
   .home-container {
     flex-direction: column;
@@ -71,10 +71,10 @@ margin-right: 50px;
   .tatoueur,
   .salon {
     width: 100%;
-    max-width: 400px; /* un peu plus petit que l'écran pour laisser un peu de marge */
-    height: auto; /* laisse la hauteur s'adapter au contenu */
-    border-radius: 15px; /* un peu moins arrondi pour mobile */
-    margin-bottom: 2rem; /* espace entre les sections */
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 15px; 
+    margin-bottom: 2rem; 
   }
 
   img {
@@ -111,3 +111,53 @@ margin-right: 50px;
 }
 
 
+ /* =================Responsive iPad Mini================= */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .tatoueur,
+  .salon {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 15px; 
+    margin-bottom: 2rem; 
+  }
+
+  img {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px; 
+    padding: 0 1rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .title {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .social-list {
+    margin-right: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
