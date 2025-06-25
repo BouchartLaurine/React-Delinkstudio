@@ -1,17 +1,21 @@
 .logo {
-  @include verticalCenter;
-  margin: 5px auto;
-  width: 200px;
-  border-radius: 20px;
-  padding: 5px 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-  background: url(../../assets/img/main.jpg) center/cover;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -60px;
+  left: -60px;
 
-  img {
-    height: 40px;
-  }
-  h3 {
-    margin-left: 10px;
-    color: $color-1;
+
+  /* ================Responsive Mobile============ */ 
+
+  @media (max-width: 420px) {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    left: 10px;
   }
 }
+
+
+/* ==================== iPadMini ========== */
+
