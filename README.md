@@ -51,7 +51,9 @@ Il présente les informations essentielles du salon, une galerie interactive et 
 
 ## 📷 Aperçu (screenshots)
 
-> *(Tu peux ajouter ici quelques captures d’écran si tu en as)*
+![Aperçu du site](./public/Capture-responsive.png)
+![Aperçu du site](./public/Capture-responsive02.png)
+
 
 ---
 
