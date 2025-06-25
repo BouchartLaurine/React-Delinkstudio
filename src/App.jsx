@@ -4,6 +4,7 @@ import "../styles/index.scss";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Contact from "./page/Contact";
+import FAQ from "./page/Faq";
 import Formulaire from "./page/Formulaire";
 import Galerie from "./page/Galerie";
 import Home from "./page/Home";
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/galerie" element={<Galerie/>} />
       <Route path="/form" element={<Formulaire/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/faq" element={<FAQ/>} />
     </Routes>
      <Footer/>
     </BrowserRouter>
