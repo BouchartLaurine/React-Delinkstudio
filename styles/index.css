@@ -23,7 +23,7 @@ li {
   font-size: 40px;
   margin-top: 1px;
 }
-.nabvar h1 h2 {
+.nabvar h1 .navbar h2 {
   color: #DFD0B8;
   font-size: 36px;
   margin-top: -2%;
@@ -39,14 +39,6 @@ li {
   justify-content: center;
 }
 
-.logo {
-  height: 130px;
-  margin-bottom: 10px;
-  position: absolute;
-  left: 4px;
-  top: -20px;
-}
-
 /* <-- ------Header ↑--------------- --> */
 nav ul {
   margin-top: 1%;
@@ -54,6 +46,7 @@ nav ul {
   list-style: none;
   background-color: #393E46;
   padding: 1px;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -66,11 +59,11 @@ h3 {
 
 nav li a {
   font-size: 36px;
-  margin-bottom: 50px;
   color: #DFD0B8;
-  margin-left: 200px;
   text-decoration: none;
   transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 2px;
+  margin-left: 100px;
 }
 
 nav li a:hover {
@@ -205,24 +198,23 @@ nav li a.active {
   }
 }
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px auto;
-  width: 200px;
-  border-radius: 20px;
-  padding: 5px 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-  background: url(../../assets/img/main.jpg) center/cover;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  /* ================Responsive Mobile============ */
 }
-.logo img {
-  height: 40px;
-}
-.logo h3 {
-  margin-left: 10px;
-  color: #61dafb;
+@media (max-width: 420px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    left: 10px;
+  }
 }
 
+/* ==================== iPadMini ========== */
 .countries {
   text-align: center;
 }
@@ -1079,18 +1071,18 @@ h1 {
   padding: 0 20px;
 }
 .faq-section h2 {
-  font-family: "Irish Grover", cursive;
+  color: #DFD0B8;
   text-align: center;
   margin-bottom: 30px;
 }
 .faq-section .faq-item {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
 }
 .faq-section .faq-item h3 {
   font-weight: bold;
-  color: #393E46;
+  color: #948979;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1108,7 +1100,7 @@ h1 {
 }
 .faq-section .faq-item p {
   margin-top: 10px;
-  color: #555;
+  color: #DFD0B8;
   transition: all 0.3s ease;
 }
 /*# sourceMappingURL=index.css.map */
