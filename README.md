@@ -79,6 +79,10 @@ Librairie utilisée : **Jest + React Testing Library**
 ### Test Jest :
 - Home Page ✅️
 - Galerie ✅️
+- RDV ✅️
+- Contact ✅️
+- Faq ✅️
+
 
 
 # React + Vite
