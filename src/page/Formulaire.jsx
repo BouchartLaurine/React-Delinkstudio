@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import React, { useState } from 'react';
 
 const Formulaire = () => {
   const [firstname, setFirstname] = useState("");
@@ -47,7 +46,6 @@ const Formulaire = () => {
               required
             />
           </div>
-
           <div className="form-input">
             <label htmlFor="email">Email :</label>
             <input
@@ -60,7 +58,6 @@ const Formulaire = () => {
               required
             />
           </div>
-
           <div className="form-input">
             <label htmlFor="phone">Téléphone :</label>
             <input
@@ -73,7 +70,6 @@ const Formulaire = () => {
               required
             />
           </div>
-
           <div className="form-input tooltip-container">
             <label htmlFor="date">Date souhaitée :</label>
             <input
@@ -89,7 +85,6 @@ const Formulaire = () => {
               Du mardi au samedi
             </span>
           </div>
-
           <div className="form-input tooltip-container">
             <label htmlFor="time">Heure souhaitée :</label>
             <input
@@ -107,7 +102,6 @@ const Formulaire = () => {
               Entre 10h et 19h
             </span>
           </div>
-
           <div className="form-input">
             <label htmlFor="tattooType">Type de tatouage :</label>
             <select
@@ -122,7 +116,6 @@ const Formulaire = () => {
               <option value="animaux">Animaux</option>
             </select>
           </div>
-
           <button type="submit" className="form-button">
             Envoyer
           </button>

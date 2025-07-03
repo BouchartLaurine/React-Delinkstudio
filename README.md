@@ -75,18 +75,10 @@ npm run dev
 
 Librairie utilisée : **Jest + React Testing Library**
 
-## Analyse de performance
-
-Audit Lighthouse :   
 
 ### Test Jest :
 - Home Page ✅️
-``` 
-    √ affiche les images avec les bons alt                                                                                                                                         
-    √ affiche les paragraphes avec les bons textes                                                                                                                                                                  
-    √ affiche le titre Mes réseaux 
-
-```
+- Galerie ✅️
 
 
 # React + Vite
