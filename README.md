@@ -71,7 +71,19 @@ npm run dev
 
 
  ```
+ ## Tests
 
+Librairie utilisée : **Jest + React Testing Library**
+
+## Analyse de performance
+
+Audit Lighthouse :  
+- Test Jest : Passed 
+- Axe d’amélioration : 
+
+
+
+```
 
 
 # React + Vite
