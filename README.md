@@ -83,6 +83,13 @@ Librairie utilisée : **Jest + React Testing Library**
 - Contact ✅️
 - Faq ✅️
 
+---
+
+### Performance de la page Rendez-vous
+![Performs](./public/Performs-rdv.png)
+
+
+---
 
 
 # React + Vite
