@@ -12,19 +12,17 @@ import Home from "./page/Home";
 const App = () => {
   return (
     <BrowserRouter>
-     <Navbar/> 
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/galerie" element={<Galerie/>} />
-      <Route path="/form" element={<Formulaire/>} />
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/faq" element={<FAQ/>} />
-    </Routes>
-     <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/galerie" element={<Galerie />} />
+        <Route path="/form" element={<Formulaire />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
-  )
-}
-
-
+  );
+};
 
 export default App;

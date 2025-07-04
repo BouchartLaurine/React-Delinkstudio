@@ -4,7 +4,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -23,9 +23,10 @@ const Contact = () => {
       <div className="container">
         <div className="contact-header">
           <h1 className="txt">
-            Vous souhaitez discuter d’une idée de tatouage ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos réseaux.
+            Vous souhaitez discuter d’une idée de tatouage ? Remplissez le
+            formulaire ci-dessous ou contactez-nous directement via nos réseaux.
           </h1>
-         <div className="color-line"></div>
+          <div className="color-line"></div>
           <p className="info">Informations importantes :</p>
 
           <div className="info-content-c">
@@ -48,8 +49,8 @@ const Contact = () => {
         <div className="color-line" />
 
         {/* Formulaire --------------------- */}
-        <div className="form-container">   
-                <h2>Prenons contact</h2>
+        <div className="form-container">
+          <h2>Prenons contact</h2>
 
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
@@ -90,7 +91,10 @@ const Contact = () => {
               />
             </div>
             <div className="button-container">
-            <button type="submit" className="form-button">Envoyer</button>  </div>
+              <button type="submit" className="form-button">
+                Envoyer
+              </button>{" "}
+            </div>
           </form>
         </div>
       </div>
@@ -99,5 +103,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-

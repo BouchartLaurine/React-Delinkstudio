@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-
-
+import React, { useState } from "react";
 
 const FAQ = () => {
   const questions = [
@@ -24,23 +22,25 @@ const FAQ = () => {
       answer:
         "Non, le tatouage est interdit aux mineurs sans consentement parental selon la loi.",
     },
-     {
+    {
       question: "Combien de temps dure une séance de tatouage ?",
       answer:
         "La durée d’une séance dépend de la taille, du détail du tatouage et de ta tolérance. En général, une séance peut durer de 30 minutes à plusieurs heures.",
     },
-         {
-      question: "Faut-il éviter l’alcool ou certains médicaments avant le tatouage ?",
+    {
+      question:
+        "Faut-il éviter l’alcool ou certains médicaments avant le tatouage ?",
       answer:
         "Oui, il est fortement conseillé d’éviter l’alcool au moins 24 heures avant le tatouage, car il fluidifie le sang et peut augmenter les saignements. Évite aussi certains médicaments comme l’aspirine ou les anti-inflammatoires qui peuvent avoir le même effet.",
     },
-         {
+    {
       question: "Combien de temps dure la cicatrisation ?",
       answer:
         "La cicatrisation initiale dure environ 2 à 3 semaines, mais le tatouage peut continuer à se stabiliser pendant plusieurs mois. Pendant cette période, il est important de suivre les soins recommandés pour éviter les infections et préserver les couleurs.",
     },
-         {
-      question: "Puis-je exposer mon tatouage au soleil pendant la cicatrisation ?",
+    {
+      question:
+        "Puis-je exposer mon tatouage au soleil pendant la cicatrisation ?",
       answer:
         "Non, il est fortement déconseillé d’exposer un tatouage frais au soleil. Les rayons UV peuvent endommager la peau sensible et altérer les pigments. Protège ton tatouage avec des vêtements ou une crème solaire adaptée une fois cicatrisé.",
     },
@@ -60,7 +60,9 @@ const FAQ = () => {
           <div key={index} className="faq-item">
             <h3 onClick={() => toggleAnswer(index)}>
               {question}
-              <span className="faq-icon">{openIndex === index ? "−" : "+"}</span>
+              <span className="faq-icon">
+                {openIndex === index ? "−" : "+"}
+              </span>
             </h3>
             {openIndex === index && <p>{answer}</p>}
           </div>

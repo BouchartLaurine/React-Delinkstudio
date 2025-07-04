@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Formulaire = () => {
   const [firstname, setFirstname] = useState("");
@@ -81,7 +81,11 @@ const Formulaire = () => {
               aria-describedby="date-info"
               required
             />
-            <span id="date-info" className="tooltip-text" title="Disponibilité du mardi au samedi">
+            <span
+              id="date-info"
+              className="tooltip-text"
+              title="Disponibilité du mardi au samedi"
+            >
               Du mardi au samedi
             </span>
           </div>
@@ -98,7 +102,11 @@ const Formulaire = () => {
               aria-describedby="time-info"
               required
             />
-            <span id="time-info" className="tooltip-text" title="Horaires disponibles entre 10h et 19h">
+            <span
+              id="time-info"
+              className="tooltip-text"
+              title="Horaires disponibles entre 10h et 19h"
+            >
               Entre 10h et 19h
             </span>
           </div>

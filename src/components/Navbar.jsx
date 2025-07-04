@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +11,8 @@ const Navbar = () => {
       if (window.innerWidth > 420) setMenuOpen(false); // Ferme le menu si on agrandit l'écran
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleLinkClick = () => {
@@ -24,7 +24,9 @@ const Navbar = () => {
       <div className="bg-header">
         <h1>Del'Ink Studio</h1>
         <h2>Vos histoires, gravées à l'encre noire</h2>
-        <a href="/"><img src="./logo-studio.png" alt="logo du studio" className="logo" /></a>
+        <a href="/">
+          <img src="./logo-studio.png" alt="logo du studio" className="logo" />
+        </a>
 
         {/* Burger button */}
         <button
@@ -38,12 +40,53 @@ const Navbar = () => {
         </button>
       </div>
 
-      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-        <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Accueil</NavLink></li>
-        <li><NavLink to="/galerie" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Galerie</NavLink></li>
-        <li><NavLink to="/form" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Prise de rendez-vous</NavLink></li>
-        <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Contact</NavLink></li>
-        <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Faq</NavLink></li>
+      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <li>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={handleLinkClick}
+          >
+            Accueil
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/galerie"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={handleLinkClick}
+          >
+            Galerie
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/form"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={handleLinkClick}
+          >
+            Prise de rendez-vous
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={handleLinkClick}
+          >
+            Contact
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/faq"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={handleLinkClick}
+          >
+            Faq
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
